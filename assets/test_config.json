@@ -1,0 +1,33 @@
+{
+  "world": {
+    "px_mu_ratio": 10,
+  },
+  "panels": {
+    "start":              {"background": "blue-orange-45.png"},
+    "sword_cave_outside": {"background": "cyan-violet-45.png"},
+    "sword_cave_inside":  {"background": "fuchsia-lime-45.png"},
+  },
+  "transitions": [
+    {
+      "from": "start", "to": "sword_cave_outside",
+      "animation": "SLIDE_FROM_LEFT",
+      "trigger": {"edge": "LEFT"}
+    },
+    {
+      "from": "sword_cave_outside", "to": "start",
+      "animation": "SLIDE_FROM_RIGHT",
+      "trigger": {"edge": "RIGHT"}
+    },
+    {
+      "from": "sword_cave_outside", "to": "sword_cave_inside",
+      "animation": "CIRCLE_CLOSE",
+      "trigger": {"mask": "cyan-violet-45-cave-mask.png"},
+      "flag": "swordCaveUnlocked"
+    },
+    {
+      "from": "sword_cave_inside", "to": "sword_cave_outside",
+      "animation": "CIRCLE_OPEN",
+      "trigger": {"edge": "BOTTOM"}
+    }
+  ]
+}

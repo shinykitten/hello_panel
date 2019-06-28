@@ -1,0 +1,13 @@
+[package]
+name = "hello_panel"
+version = "0.1.0"
+authors = ["kitlane"]
+edition = "2018"
+
+[dependencies]
+piston = "0.42.0"
+piston_window = "0.89.0"
+piston2d-graphics = "0.30.0"
+image = "0.21.0"
+gfx_device_gl = "0.16.0"
+fps_counter = "1.0.0"

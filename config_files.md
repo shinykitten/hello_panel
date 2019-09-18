@@ -1,6 +1,6 @@
 # Design notes on the format of Panel configuration files
-The overall goal is to enable non-programmers to write configurations that
-express a world map made of background panels.
+The overall goal is to enable users to write configurations that express a world
+map made of background panels.
 
 ### Support for non-cartesian geography
 Panels are just nodes on a virtual graph, and they aren't placed in a single

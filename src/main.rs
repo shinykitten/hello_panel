@@ -37,7 +37,7 @@ fn main() {
     // Glyphs::new returns a GlyphCache.  GlyphCache replicates the factory pattern we see on
     // window (it creates Textures for each glyph, manages them internally.)  The downside to this
     // is that it needs access to a window.factory because only window.factory can create Texture
-    // resouces.  But we can't just give the GlyphCache a reference to window.factory because we'll
+    // resources. But we can't just give the GlyphCache a reference to window.factory because we'll
     // need window later for other things, so we clone it.  I wonder if that's what they intended.
     let mut glyphs = Glyphs::new(
         "assets/FiraSans-Regular.ttf", window.factory.clone(), TextureSettings::new()).unwrap();

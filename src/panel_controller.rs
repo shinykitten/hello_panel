@@ -1,4 +1,4 @@
-use image::{RgbaImage, ImageError::FormatError};
+use image::RgbaImage;
 
 pub struct PanelCache {
     panel_width: usize,  // Needed when creating new panels; assigned at new, never updated.
@@ -26,7 +26,7 @@ impl PanelCache {
 }
 
 pub enum PanelTransition {
-    SHARE_SCREEN, SNAP_TO_SCREEN_EDGE,
+    ShareScreen, SnapToScreenEdge,
 }
 
 pub struct PanelGraphEdge {
